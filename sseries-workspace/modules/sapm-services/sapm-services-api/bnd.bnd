@@ -1,0 +1,7 @@
+Bundle-SymbolicName: sapm.services-api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.skysoft.sseries.sapm.exception,\
+	com.skysoft.sseries.sapm.model,\
+	com.skysoft.sseries.sapm.service,\
+	com.skysoft.sseries.sapm.service.persistence
