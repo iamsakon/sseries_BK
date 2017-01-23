@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extension">
+<ui:composition template="/_Decorator.xhtml">
+	<ui:define name="body">
+		<h:form>
+			<p:panel id="createPnl" header="Building" toggleable="true"
+				closable="false" toggleSpeed="500" onCloseUpdate="growl"
+				closeSpeed="2000" onToggleUpdate="growl" widgetVar="panel">
+				<h:panelGrid columns="3" cellpadding="10">
+					<p:outputLabel>code</p:outputLabel>
+					<p:inputText size="19" maxlength="19" label="Code"
+						id="code"
+						value=""
+						required="true" />
+					<p:message for="code" />
+					
+					<p:outputLabel>name</p:outputLabel>
+					<p:inputText size="19" maxlength="19" label="name"
+						id="name"
+						value=""
+						required="true" />
+					<p:message for="name" />
+				</h:panelGrid>
+			</p:panel>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>
